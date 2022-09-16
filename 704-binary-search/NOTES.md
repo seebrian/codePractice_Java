@@ -32,3 +32,10 @@ if arr[mid] < target, left = mid+1, no change for left --> (correct Insert posit
 Leetcode #34 <br>
 if (nums[mid] == target) right = mid - 1;		// Look for better answer to the left, find the first answer <br>
 if (nums[mid] == target) left = mid + 1;		// Look for better answer to the right, find the last answer <br>
+
+Leetcode #69 <br>
+mid * mid > x can overflow. replace by mid > x / mid<br>
+ // if mid * mid < x but (mid + 1) * (mid + 1) > x then mid was the right answer <br>
+                if (left > x / left) {<br>
+                    return mid;<br>
+                }                <br>
