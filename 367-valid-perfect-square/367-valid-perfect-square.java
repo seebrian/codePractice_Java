@@ -5,7 +5,7 @@ class Solution {
         int right = num / 2;
         while (left <= right) {
             int mid = left + (right - left) / 2;
-            System.out.println(left +", "+right+", "+mid);
+            //System.out.println(left +", "+right+", "+mid);
             if (mid > num*1.0 / mid) {
                 right = mid - 1;
             }
