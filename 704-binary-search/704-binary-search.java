@@ -5,7 +5,6 @@ class Solution {
         int right = nums.length - 1;
         while (left < right) {
             int mid = left + (right - left) / 2;
-            System.out.println("left: "+left +", right: "+right+", mid: "+mid);
             if (nums[mid] > target) {
                 right = mid;
             } else if (nums[mid] < target) {
@@ -14,8 +13,7 @@ class Solution {
                 return mid;
             }
         }
-        System.out.println("aaaaleft: "+left);
-         if(nums[left] == target) 
+        if(nums[left] == target) 
              return left;
         return -1;
     }
