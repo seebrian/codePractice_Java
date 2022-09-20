@@ -10,12 +10,8 @@ class Solution {
             if (mid > x/mid) {
                 right = mid-1 ;
             }
-            else if (mid < x/mid) {
+            else {
                 left = mid;
-               
-            }
-            else { 
-                return mid;
             }
         }
         return left;
