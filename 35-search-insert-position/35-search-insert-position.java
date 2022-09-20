@@ -1,5 +1,6 @@
 class Solution {
 public int searchInsert(int[] nums, int target) {
+    // Left closed, right open
         int left = 0 ;         
         int right = nums.length;
     
@@ -15,6 +16,7 @@ public int searchInsert(int[] nums, int target) {
 }
 
 /*
+// Left closed, right closed
 class Solution {
     public int searchInsert(int[] nums, int target) {
         int left = 0;
