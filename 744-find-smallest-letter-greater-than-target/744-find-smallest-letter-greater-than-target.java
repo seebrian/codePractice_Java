@@ -3,8 +3,10 @@ class Solution {
         int left = 0;
         int right = letters.length - 1;
         
-        if (target >= letters[letters.length - 1])   target = letters[0];
-        else    target++;
+        if (target >= letters[letters.length - 1])   
+            target = letters[0];
+        else    
+            target++;
         while (left < right) {
             int mid = left + (right-left)/2;
             int targetNum = (int)letters[mid];
