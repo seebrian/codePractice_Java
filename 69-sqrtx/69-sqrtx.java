@@ -6,16 +6,17 @@ class Solution {
         int right = x/2 + 2;
         
         while (left < right) {
-            int mid = left + (right - left + 1) / 2; 
-            
+            int mid = left + (right - left) / 2; 
             if (mid > x/mid) {
-                right = mid - 1 ;
+                right = mid;
             }
-            else {
-                left = mid;
+            else if (mid < x/mid) {
+                left = mid + 1;
+            } else {
+                return mid;
             }
         }
-        return left;
+        return left - 1;
     }
 }
 
