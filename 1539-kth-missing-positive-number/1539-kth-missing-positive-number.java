@@ -5,12 +5,10 @@ class Solution {
         while (left < right) {
             int mid = left + (right - left) / 2;
             //System.out.printf("left: %d, right: %d, mid: %d, arr[mid] - 1 -mid: %d, k: %d%n", left,right,mid,arr[mid] - 1 -mid ,k);
-            if (arr[mid] - 1 -mid > k) {
+            if (arr[mid] - 1 -mid >= k) {
                 right = mid;
             } else if (arr[mid] - 1 -mid < k) {
                 left = mid + 1;
-            } else {
-                 right = mid;
             }
         }
         return left +k;
