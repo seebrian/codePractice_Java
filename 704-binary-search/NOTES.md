@@ -38,3 +38,8 @@ start with 1 to n <br>
 Leetcode #441 <br>
 if left = mid +1, if equal target than look to the right <br>
 left` is the minimum k value, `left - 1` is the answer
+
+leetcode #1539
+need handle equal case <br>
+if (arr[mid] - 1 -mid >= k) {<br>
+                right = mid;
