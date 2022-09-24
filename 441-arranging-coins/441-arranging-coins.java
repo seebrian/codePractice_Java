@@ -10,9 +10,11 @@ class Solution {
             if (sum > n) {
                 right = mid;
             } else
-            if (sum <= n) {
+            if (sum < n) {
                 left = mid + 1;
-            } 
+            } else {
+                return mid;
+            }
         }
         return left-1;
     }
