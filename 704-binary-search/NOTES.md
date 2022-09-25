@@ -43,3 +43,5 @@ leetcode #1539
 need handle equal case <br>
 if (arr[mid] - 1 -mid >= k) {<br>
                 right = mid;
+
+leetcode #167 two pointers & binary search
