@@ -9,9 +9,9 @@ class Solution {
                 nums1[total--] = nums2[ptr2--];
             } else if (ptr2 < 0) {
                 nums1[total--] = nums1[ptr1--];
-            } else if (nums1[ptr1] >= nums2[ptr2]) {
+            } else if (nums1[ptr1] > nums2[ptr2]) {
                 nums1[total--] = nums1[ptr1--];
-            } else if (nums1[ptr1] < nums2[ptr2]) {
+            } else if (nums1[ptr1] <= nums2[ptr2]) {
                 nums1[total--] = nums2[ptr2--];
             }
         }
