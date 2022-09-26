@@ -7,12 +7,16 @@ class Solution {
         char[] arr = s.toCharArray();
         while (left < right) {
             
-            while (left < right && !vowels.contains(arr[right]+"")) {
-                right--;
+            while (left < right) {
+                if (!vowels.contains(arr[left]+"")) {
+                    left++;
+                } else break;
             }
-                   
-            while (left < right && !vowels.contains(arr[left]+"")) {
-                left++;
+            
+            while (left < right) {
+                if (!vowels.contains(arr[right]+"")) {
+                    right--; 
+                } else break;
             }
             
             if (vowels.contains(arr[left]+"") &&  vowels.contains(arr[right]+""))             {
