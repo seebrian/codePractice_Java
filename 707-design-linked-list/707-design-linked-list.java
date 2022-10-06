@@ -53,10 +53,6 @@ class MyLinkedList {
             return ;
         }        
         length--;
-        if (index == 0) {
-            dummyHead = dummyHead.next;
-	        return;
-        }
         Node pre = dummyHead;
         for (int i = 0; i < index; i++) {
             pre = pre.next;
