@@ -51,15 +51,13 @@ class MyLinkedList {
     public void deleteAtIndex(int index) {
         if (index >= length) {
             return ;
-        }        
-        length--;
+        }
         Node pre = dummyHead;
         for (int i = 0; i < index; i++) {
             pre = pre.next;
         }
         pre.next = pre.next.next;
-  
-        
+        length--;
     }
 }
 
