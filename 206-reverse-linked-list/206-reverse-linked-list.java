@@ -10,16 +10,29 @@
  */
 class Solution {
     public ListNode reverseList(ListNode head) {
-        ListNode curr = head;
-        ListNode prev = null;
-       
-        while(curr != null) {
-            ListNode tmp = curr.next;
-            curr.next = prev;
-            prev = curr;
-            curr = tmp;
-          
-        }
-        return prev;
+            
+        return reverse(null, head);
+    }
+    public ListNode reverse (ListNode prev, ListNode curr) {
+        if (curr == null) return prev;
+
+        ListNode tmp = curr.next;
+        curr.next = prev;
+        return reverse (curr, tmp);
+        
     }
 }
+// class Solution {
+//     public ListNode reverseList(ListNode head) {
+//         ListNode curr = head;
+//         ListNode prev = null;
+       
+//         while(curr != null) {
+//             ListNode tmp = curr.next;
+//             curr.next = prev;
+//             prev = curr;
+//             curr = tmp;
+//         }
+//         return prev;
+//     }
+// }
