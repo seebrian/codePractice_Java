@@ -42,3 +42,30 @@ FROM Person
 LEFT JOIN Address 
 ON Person.personId = Address.personId
 ```
+
+## 181. Employees Earning More Than Their Managers
+[Leetcode](https://leetcode.com/problems/employees-earning-more-than-their-managers/description/)
+rename name to employee in result table (using AS)
+```
+# Explicit vs implicit SQL joins
+SELECT e.name AS Employee FROM Employee AS e
+JOIN Employee AS m
+ON e.managerId = m.id
+AND e.Salary >= m.Salary
+
+SELECT e.name AS Employee FROM Employee AS e, Employee AS m
+where e.managerId = m.id
+AND e.Salary >= m.Salary
+
+```
+
+
+## 183. Customers Who Never Order
+[Leetcode](https://leetcode.com/problems/customers-who-never-order/)
+```
+SELECT c.name AS Customers 
+FROM Customers AS c
+LEFT JOIN Orders AS o
+on c.id = o.customerid
+WHERE o.id IS NULL
+```
