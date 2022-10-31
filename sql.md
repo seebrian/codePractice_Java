@@ -69,3 +69,15 @@ LEFT JOIN Orders AS o
 on c.id = o.customerid
 WHERE o.id IS NULL
 ```
+
+## 184. Department Highest Salary
+[Leetcode](https://leetcode.com/problems/department-highest-salary/)
+```
+SELECT d.name AS Department, A.name AS Employee, A.salary
+FROM 
+	Employee A,
+	Department D   
+WHERE A.DepartmentId = D.Id 
+  AND NOT EXISTS 
+  (SELECT 1 FROM Employee B WHERE B.Salary > A.Salary AND A.DepartmentId = B.DepartmentId) 
+ ```
