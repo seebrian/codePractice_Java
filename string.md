@@ -20,3 +20,11 @@
 
 ## 696. Count Binary Substrings(Easy) CZ
 [Leetcode](https://leetcode.com/problems/count-binary-substrings/description/)
+
+## 28. Find the Index of the First Occurrence in a String (Medium) pc
+[Leetcode](https://leetcode.com/problems/find-the-index-of-the-first-occurrence-in-a-string/description/)
+KPM Algorithm
+
+## 459. Repeated Substring Pattern (Easy) pc
+[Leetcode](https://leetcode.com/problems/repeated-substring-pattern/description/)
+KPM Algorithm
