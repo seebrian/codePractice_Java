@@ -14,3 +14,7 @@
 
 ## 150. Evaluate Reverse Polish Notation (Medium) pc
 [Leetcode](https://leetcode.com/problems/evaluate-reverse-polish-notation/description/)
+
+## 155. Min Stack (Easy) cz
+[Leetcode](https://leetcode.com/problems/min-stack/)
+
